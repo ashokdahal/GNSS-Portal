@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Post-processing</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+    
+    <link href="{{ url_for('static', filename='theme.css') }}" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container theme-showcase" role="main">
+      <h1>Email: {{ email }}</h1>
+      <h1>Name: {{ Name }}</h1>
+      <h1>Elevation Mask: {{ ema }}</h1>
+      <h1>Frequency: {{ frq }}</h1>
+      <h1>Positioningmode: {{ pmode }}</h1>
+      <h1>File: {{ fileBase }}</h1>
+    </div> <!-- /container -->
+
+  </body>
+</html>
